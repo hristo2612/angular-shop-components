@@ -1,7 +1,7 @@
 {
-  "name": "angular-confirmation-popover",
-  "version": "4.2.0",
-  "description": "An angular 5.0+ bootstrap confirmation popover",
+  "name": "angular-shop-components",
+  "version": "0.0.1",
+  "description": "An angular 5.0+ set of reusable components and services for starting an online shop!",
   "scripts": {
     "start": "concurrently --raw \"webpack-dev-server --open\" \"npm run test:watch\"",
     "build:demo": "webpack",
@@ -40,23 +40,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattlewis92/angular-confirmation-popover.git"
+    "url": "git+https://github.com/hristo2612/angular-shop-components.git"
   },
   "keywords": [
     "angular",
     "angular2",
     "angular5",
     "bootstrap",
-    "popover",
-    "confirm",
-    "confirmation"
+    "shop",
+    "ecommerse",
+    "reusable",
+    "components"
   ],
-  "author": "Matt Lewis",
+  "author": "Hristo Bogoev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mattlewis92/angular-confirmation-popover/issues"
+    "url": "https://github.com/hristo2612/angular-shop-components/issues"
   },
-  "homepage": "https://github.com/mattlewis92/angular-confirmation-popover#readme",
+  "homepage": "https://github.com/hristo2612/angular-shop-components#readme",
   "devDependencies": {
     "@angular/common": "^6.0.5",
     "@angular/compiler": "^6.0.5",
