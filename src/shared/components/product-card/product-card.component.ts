@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'product-card',
+  selector: 'mwl-product-card',
   template: `<div class="card">
   I am a nice card component please be good with me!
 </div>
