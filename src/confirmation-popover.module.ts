@@ -8,6 +8,7 @@ import {
   ConfirmationPopoverOptions,
   ConfirmationPopoverOptionsInterface
 } from './confirmation-popover-options.provider';
+import { SharedModule } from './shared/shared.module';
 
 export const USER_OPTIONS: InjectionToken<string> = new InjectionToken(
   'confirmation popover user options'
@@ -27,7 +28,7 @@ export function optionsFactory(
     ConfirmationPopoverWindowComponent,
     FocusDirective
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule],
   exports: [ConfirmationPopoverDirective, FocusDirective],
   entryComponents: [ConfirmationPopoverWindowComponent]
 })
