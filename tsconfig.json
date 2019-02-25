@@ -10,7 +10,9 @@
     "lib": ["dom", "es2015"],
     "strict": true,
     "skipLibCheck": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false
   },
   "include": [
     "demo/**/*",
