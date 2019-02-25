@@ -2,7 +2,6 @@
 [![Build Status](https://travis-ci.org/hristo2612/angular-shop-components.svg?branch=master)](https://travis-ci.org/hristo2612/angular-shop-components)
 [![codecov](https://codecov.io/gh/hristo2612/angular-shop-components/branch/master/graph/badge.svg)](https://codecov.io/gh/hristo2612/angular-shop-components)
 [![npm version](https://badge.fury.io/js/angular-confirmation-popover.svg)](http://badge.fury.io/js/angular-confirmation-popover)
-[![devDependency Status](https://david-dm.org/hristo2612/angular-shop-components/dev-status.svg)](https://david-dm.org/hristo2612/angular-shop-components?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/hristo2612/angular-shop-components.svg)](https://github.com/hristo2612/angular-shop-components/issues)
 [![GitHub stars](https://img.shields.io/github/stars/hristo2612/angular-shop-components.svg)](https://github.com/hristo2612/angular-shop-components/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hristo2612/angular-shop-components/master/LICENSE)
