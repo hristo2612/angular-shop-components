@@ -1,13 +1,14 @@
-# Angular Shop Components
-[![Build Status](https://travis-ci.org/hristo2612/angular-shop-components.svg?branch=master)](https://travis-ci.org/hristo2612/angular-shop-components)
-[![codecov](https://codecov.io/gh/hristo2612/angular-shop-components/branch/master/graph/badge.svg)](https://codecov.io/gh/hristo2612/angular-shop-components)
+# Angular confirmation popover
+[![Build Status](https://travis-ci.org/mattlewis92/angular-confirmation-popover.svg?branch=master)](https://travis-ci.org/mattlewis92/angular-confirmation-popover)
+[![codecov](https://codecov.io/gh/mattlewis92/angular-confirmation-popover/branch/master/graph/badge.svg)](https://codecov.io/gh/mattlewis92/angular-confirmation-popover)
 [![npm version](https://badge.fury.io/js/angular-confirmation-popover.svg)](http://badge.fury.io/js/angular-confirmation-popover)
-[![GitHub issues](https://img.shields.io/github/issues/hristo2612/angular-shop-components.svg)](https://github.com/hristo2612/angular-shop-components/issues)
-[![GitHub stars](https://img.shields.io/github/stars/hristo2612/angular-shop-components.svg)](https://github.com/hristo2612/angular-shop-components/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hristo2612/angular-shop-components/master/LICENSE)
+[![devDependency Status](https://david-dm.org/mattlewis92/angular-confirmation-popover/dev-status.svg)](https://david-dm.org/mattlewis92/angular-confirmation-popover?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/mattlewis92/angular-confirmation-popover.svg)](https://github.com/mattlewis92/angular-confirmation-popover/issues)
+[![GitHub stars](https://img.shields.io/github/stars/mattlewis92/angular-confirmation-popover.svg)](https://github.com/mattlewis92/angular-confirmation-popover/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mattlewis92/angular-confirmation-popover/master/LICENSE)
 
 ## Demo
-https://hristo2612.github.io/angular-shop-components/demo
+https://mattlewis92.github.io/angular-confirmation-popover/
 
 ## Table of contents
 
@@ -19,14 +20,15 @@ https://hristo2612.github.io/angular-shop-components/demo
 
 ## About
 
-Npm package containing all necessary components for creating a reusable online shop
+A simple angular 5.0+ directive to display a bootstrap styled confirmation popover when an element is clicked.
 
+[AngularJS 1.x version](https://github.com/mattlewis92/angular-bootstrap-confirm)
 
 ## Installation
 
 Install through npm:
 ```
-npm install --save angular-shop-components
+npm install --save angular-confirmation-popover
 ```
 
 Then use it in your app on a component:
@@ -36,7 +38,7 @@ Then use it in your app on a component:
  // if not using bootstrap you could implement the popover styles yourself
 import 'bootstrap/dist/css/bootstrap.css';
 import { NgModule, Component } from '@angular/core';
-import { ConfirmationPopoverModule } from 'angular-shop-components';
+import { ConfirmationPopoverModule } from 'angular-confirmation-popover';
 
 // first add it to your apps module
 @NgModule({
@@ -75,13 +77,13 @@ class MyComponent {
 
 ```
 
-You may also find it useful to view the [demo source](https://github.com/hristo2612/angular-shop-components/blob/master/demo/demo.component.ts).
+You may also find it useful to view the [demo source](https://github.com/mattlewis92/angular-confirmation-popover/blob/master/demo/demo.component.ts).
 
 ## Documentation
 All documentation is auto-generated from the source via compodoc and can be viewed here:
-https://hristo2612.github.io/angular-shop-components/docs/
+https://mattlewis92.github.io/angular-confirmation-popover/docs/
 
-The main `mwlConfirmationPopover` directive options can be viewed [here](https://hristo2612.github.io/angular-shop-components/docs/directives/ConfirmationPopover.html).
+The main `mwlConfirmationPopover` directive options can be viewed [here](https://mattlewis92.github.io/angular-confirmation-popover/docs/directives/ConfirmationPopover.html).
 
 ## Development
 

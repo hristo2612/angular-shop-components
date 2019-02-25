@@ -1,41 +1,11 @@
 {
   "name": "angular-shop-components",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "An angular 5.0+ set of reusable components and services for starting an online shop!",
-  "scripts": {
-    "start": "concurrently --raw \"webpack-dev-server --open\" \"npm run test:watch\"",
-    "build:demo": "webpack",
-    "build:dist": "ng-packagr -p package.json",
-    "build:clean": "del ./dist",
-    "test": "karma start --single-run && npm run build:dist && npm run build:clean",
-    "test:watch": "karma start --auto-watch",
-    "commit": "git-cz",
-    "compodoc": "compodoc -p tsconfig-compodoc.json -d docs --disableGraph --disableCoverage --disablePrivate --disableInternal --disableLifeCycleHooks --disableProtected",
-    "gh-pages": "git checkout gh-pages && git merge master --no-edit && npm run build:demo && npm run compodoc && git add . && git commit -m 'chore: build demo and docs' && git push && git checkout master",
-    "copyfiles": "copyfiles CHANGELOG.md dist",
-    "prerelease": "npm test",
-    "release:git": "standard-version && git push --follow-tags origin master",
-    "release:npm": "npm run build:dist && npm run copyfiles && npm publish dist",
-    "release": "npm run release:git && npm run release:npm",
-    "postrelease": "npm run build:clean && npm run gh-pages",
-    "commitmsg": "validate-commit-msg",
-    "codecov": "cat coverage/lcov.info | codecov",
-    "prettier": "prettier --write",
-    "precommit": "lint-staged"
-  },
   "lint-staged": {
     "{demo,src,test}/**/*.ts": [
       "npm run prettier",
       "git add"
-    ]
-  },
-  "ngPackage": {
-    "lib": {
-      "entryFile": "src/index.ts"
-    },
-    "whitelistedNonPeerDependencies": [
-      "tslib",
-      "positioning"
     ]
   },
   "repository": {
@@ -66,9 +36,7 @@
     "@angular/forms": "^6.0.5",
     "@angular/platform-browser": "^6.0.5",
     "@angular/platform-browser-dynamic": "^6.0.5",
-    "@angular/router": "^6.0.5",
     "@compodoc/compodoc": "^1.1.3",
-    "@ng-bootstrap/ng-bootstrap": "^4.0.4",
     "@types/chai": "^4.1.4",
     "@types/chai-dom": "0.0.6",
     "@types/fork-ts-checker-webpack-plugin": "^0.4.0",
@@ -77,9 +45,6 @@
     "@types/sinon": "^4.3.3",
     "@types/sinon-chai": "^3.2.0",
     "@types/webpack": "^4.4.0",
-    "angular-4-data-table": "^0.4.6",
-    "angularfire2": "^4.0.0-rc0",
-    "bootstrap": "^4.3.1",
     "chai": "^4.1.2",
     "chai-dom": "^1.8.0",
     "codecov": "^3.0.2",
@@ -90,8 +55,6 @@
     "core-js": "^2.5.7",
     "cz-conventional-changelog": "^2.1.0",
     "del-cli": "^1.0.0",
-    "firebase": "^4.3.1",
-    "font-awesome": "^4.7.0",
     "fork-ts-checker-webpack-plugin": "^0.4.2",
     "husky": "^0.14.3",
     "istanbul-instrumenter-loader": "^3.0.1",
@@ -104,10 +67,8 @@
     "lint-staged": "^7.2.0",
     "mocha": "^5.2.0",
     "ng-packagr": "^3.0.2",
-    "ng2-validation": "^4.2.0",
     "prettier": "^1.13.5",
     "rxjs": "^6.2.1",
-    "rxjs-compat": "^6.4.0",
     "sinon": "^6.0.0",
     "sinon-chai": "^3.2.0",
     "standard-version": "^4.4.0",
@@ -133,6 +94,17 @@
     }
   },
   "dependencies": {
-    "positioning": "^1.3.1"
-  }
+    "positioning": "^1.3.1",
+    "tslib": "^1.9.0"
+  },
+  "main": "bundles/angular-shop-components.umd.js",
+  "module": "fesm5/angular-shop-components.js",
+  "es2015": "fesm2015/angular-shop-components.js",
+  "esm5": "esm5/angular-shop-components.js",
+  "esm2015": "esm2015/angular-shop-components.js",
+  "fesm5": "fesm5/angular-shop-components.js",
+  "fesm2015": "fesm2015/angular-shop-components.js",
+  "typings": "angular-shop-components.d.ts",
+  "metadata": "angular-shop-components.metadata.json",
+  "sideEffects": false
 }
