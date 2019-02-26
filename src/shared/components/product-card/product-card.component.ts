@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   I am a nice card component please be good with me!
 </div>
 `,
-  styleUrls: ['/src/shared/product-card/product-card.component.css']
+  styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent implements OnInit {
 
