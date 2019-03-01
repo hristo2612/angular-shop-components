@@ -1,6 +1,6 @@
 {
   "name": "angular-shop-components",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "An angular 5.0+ set of reusable components and services for starting an online shop!",
   "scripts": {
     "start": "concurrently --raw \"webpack-dev-server --open\" \"npm run test:watch\"",
